@@ -9,7 +9,7 @@ type AddToCart = {
   productImage: string;
 }
 
-const Cart: React.FC<AddtoCart> = ({ productId, productName, productPrice, productImage }) => {
+const Cart: React.FC<AddToCart> = ({ productId, productName, productPrice, productImage }) => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
@@ -32,7 +32,7 @@ const Cart: React.FC<AddtoCart> = ({ productId, productName, productPrice, produ
       quantity,
     };
 
-     // Retrieve existing cart from localStorage, or initialize a new one
+    // Retrieve existing cart from localStorage, or initialize a new one
     const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
 
     // Check if the product already exists in the cart
@@ -67,14 +67,14 @@ const Cart: React.FC<AddtoCart> = ({ productId, productName, productPrice, produ
         <input
           type="number"
           min="1"
-           value={quantity}
-           onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
-           className="w-16 text-center border px-2 py-1 rounded-md"
-         />
+          value={quantity}
+          onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+          className="w-16 text-center border px-2 py-1 rounded-md"
+        />
         <button
-         onClick={handleIncrease}
+          onClick={handleIncrease}
           className="bg-gray-200 text-gray-600 px-4 py-2 rounded-md"
-         >
+        >
           +
         </button>
       </div>
@@ -84,10 +84,9 @@ const Cart: React.FC<AddtoCart> = ({ productId, productName, productPrice, produ
         className="bg-blue-600 text-white px-6 py-2 rounded-md mt-4"
       >
         Add to Cart
-       </button>
-     </div>
+      </button>
+    </div>
   );
- };
+};
 
 export default Cart;
-
