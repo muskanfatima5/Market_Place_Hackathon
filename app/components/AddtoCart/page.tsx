@@ -42,8 +42,9 @@ const AddToCart: React.FC<AddToCartProps> = ({
 
     // Check if the product already exists in the cart
     const existingItemIndex = savedCart.findIndex(
-      (item: any) => item.productId === productId
+      (item: { productId: string; productName: string; productPrice: number; productImage: string; quantity: number }) => item.productId === productId
     );
+
 
     if (existingItemIndex >= 0) {
       // If product already exists, update quantity
