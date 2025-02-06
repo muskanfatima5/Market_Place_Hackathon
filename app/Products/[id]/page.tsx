@@ -3,7 +3,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import Foot from "@/app/Foot/page";
-import AddToCart from "@/app/components/AddtoCart/page";
+import AddToCart from "@/app/components/Cart/page";
 import Link from "next/link";
 
 
