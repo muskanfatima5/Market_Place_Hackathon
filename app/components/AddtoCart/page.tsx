@@ -9,12 +9,7 @@ interface AddToCartProps {
   productImage: string;
 }
 
-const AddToCart: React.FC<AddToCartProps> = ({
-  productId,
-  productName,
-  productPrice,
-  productImage,
-}) => {
+const AddToCart: React.FC<AddToCartProps> = ({ productId, productName, productPrice, productImage }) => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
@@ -44,7 +39,6 @@ const AddToCart: React.FC<AddToCartProps> = ({
     const existingItemIndex = savedCart.findIndex(
       (item: { productId: string; productName: string; productPrice: number; productImage: string; quantity: number }) => item.productId === productId
     );
-
 
     if (existingItemIndex >= 0) {
       // If product already exists, update quantity
@@ -96,3 +90,4 @@ const AddToCart: React.FC<AddToCartProps> = ({
 };
 
 export default AddToCart;
+
