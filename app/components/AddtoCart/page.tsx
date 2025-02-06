@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-type AddToCart = 
+type AddToCart = {
   productId: string;
   productName: string;
   productPrice: number;
