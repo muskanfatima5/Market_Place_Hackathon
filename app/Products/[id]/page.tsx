@@ -4,7 +4,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import Foot from "@/app/Foot/page";
 // import AddToCart from "@/app/components/AddtoCart/page";
-import Link from "next/link";
+// import Link from "next/link";
 
 
 async function Detail({ params: { id } }: { params: { id: string } }) {
