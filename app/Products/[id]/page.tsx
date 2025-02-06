@@ -3,8 +3,8 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import Foot from "@/app/Foot/page";
-// import AddToCart from "@/app/components/AddtoCart/page";
-// import Link from "next/link";
+import AddToCart from "@/app/components/AddtoCart/page";
+import Link from "next/link";
 
 
 async function Detail({ params: { id } }: { params: { id: string } }) {
@@ -85,7 +85,7 @@ async function Detail({ params: { id } }: { params: { id: string } }) {
             <div className="mt-4 text-gray-700">
               <p className="text-2xl font-bold">{products.category}</p>
               <p className="mt-2 mr-[20px] mb-[20px] lg:mb-hidden text-sm">{products.description}</p>
-{/*               <Link href="/Cart">
+              <Link href="/Cart">
               <AddToCart
               productId={products.id}
               productName={products.name}
@@ -93,7 +93,7 @@ async function Detail({ params: { id } }: { params: { id: string } }) {
               productImage={urlFor(products.image).url()}
       
              />
-             </Link> */}
+             </Link>
             </div> 
           </div>
         </div>
