@@ -6,6 +6,6 @@ interface Product{
     price : number,
     category : string,
     imageUrl : string,
-    image : any,
+     image : string,
     discountPercent : number
 }

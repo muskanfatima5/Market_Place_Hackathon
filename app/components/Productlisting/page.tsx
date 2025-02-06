@@ -1,13 +1,14 @@
 import { client } from "@/sanity/lib/client";
-import product from "@/sanity/schemaTypes/product";
-import Product from "../../page";
-import Image from "next/image";
-import { urlFor } from "@/sanity/lib/image";
+// import product from "@/sanity/schemaTypes/product";
+// import Product from "../../page";
+// import Image from "next/image";
+// import { urlFor } from "@/sanity/lib/image";
 import Foot from "../../Foot/page";
-import Link from "next/link";
+// import Link from "next/link";
 import SearchAndFilter from "../SearchandFilter/page";
 
-async function View({ product }: { product: Product }) {
+// async function View({ product }: { product: Product }) {
+  async function View() {
   const query = `*[_type == "product"]
    {
        _id,

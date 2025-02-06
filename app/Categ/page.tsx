@@ -6,8 +6,9 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
 
-async function Cat({ product }: { product: Product }) {
-  let errorMessage = "";
+// async function Cat({ product }: { product: Product }) {
+  async function Cat() {
+  // let errorMessage = "";
   let data: Product[] = [];
   const query = `*[_type == "product"][5..17]
    {
@@ -20,17 +21,17 @@ async function Cat({ product }: { product: Product }) {
       "imageUrl":image.asset->url
    }`;
 
-try {
+// try {
   data = await client.fetch(query);
   console.log(data);
 
-  if (data.length === 0) {
-    errorMessage = "Products not found.";
-  }
-} catch (error) {
-  console.error("Error fetching products:", error);
-  errorMessage = "An error occurred while fetching products.";
-}
+//   if (data.length === 0) {
+//     errorMessage = "Products not found.";
+//   }
+// } catch (error) {
+//   console.error("Error fetching products:", error);
+//   errorMessage = "An error occurred while fetching products.";
+// }
 
   return(
     

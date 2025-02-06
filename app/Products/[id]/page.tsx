@@ -1,4 +1,4 @@
-import Product from "@/app/page";
+// import Product from "@/app/page";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
@@ -92,7 +92,8 @@ async function Detail({ params: { id } }: { params: { id: string } }) {
               productPrice={products.price}
               productImage={urlFor(products.image).url()}
       
-             /></Link>
+             />
+             </Link>
             </div> 
           </div>
         </div>
