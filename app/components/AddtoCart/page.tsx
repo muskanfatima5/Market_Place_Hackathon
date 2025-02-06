@@ -9,7 +9,7 @@ interface AddtoCart {
   productImage: string;
 }
 
-const AddToCart: React.FC<AddtoCart> = ({ productId, productName, productPrice, productImage }) => {
+const Cart: React.FC<AddtoCart> = ({ productId, productName, productPrice, productImage }) => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
@@ -89,5 +89,5 @@ const AddToCart: React.FC<AddtoCart> = ({ productId, productName, productPrice, 
   );
  }
   
-export default AddToCart;
+export default Cart;
 
