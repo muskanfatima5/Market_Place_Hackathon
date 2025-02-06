@@ -87,6 +87,7 @@ const AddToCart: React.FC<AddtoCart> = ({ productId, productName, productPrice, 
        </button>
      </div>
   );
- };
-  export default AddToCart;
+ }
+  
+export default AddToCart;
 
