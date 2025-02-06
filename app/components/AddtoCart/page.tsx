@@ -2,14 +2,14 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-type AddToCart = {
+type Cart = {
   productId: string;
   productName: string;
   productPrice: number;
   productImage: string;
 }
 
-const Cart: React.FC<AddToCart> = ({ productId, productName, productPrice, productImage }) => {
+const AddToCart: React.FC<Cart> = ({ productId, productName, productPrice, productImage }) => {
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
 
@@ -89,4 +89,4 @@ const Cart: React.FC<AddToCart> = ({ productId, productName, productPrice, produ
   );
 };
 
-export default Cart;
+export default AddToCart;
