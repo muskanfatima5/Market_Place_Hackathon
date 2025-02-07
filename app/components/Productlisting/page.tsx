@@ -5,7 +5,7 @@ import { client } from "@/sanity/lib/client";
 // import { urlFor } from "@/sanity/lib/image";
 import Foot from "../../Foot/page";
 // import Link from "next/link";
-import SearchAndFilter from "../SearchandFilter/page";
+import SearchAndFilter from "../SearchandFilter/Search";
 
 // async function View({ product }: { product: Product }) {
   async function View() {
