@@ -43,7 +43,7 @@ function Header(){
           <p className="three">New Arrivals</p>
           <p className="four">Brands</p>
           <div className="options">
-            <Image src="/images/mob-search.png" alt="cart" width={24} height={24} className="w-[24px] h-[24px] ml-[-40px] md:hidden lg:hidden" />
+{/*             <Image src="/images/mob-search.png" alt="cart" width={24} height={24} className="w-[24px] h-[24px] ml-[-40px] md:hidden lg:hidden" /> */}
             <Link href="./Cart">
             <Image src="/images/cart.png" alt="cart" width={24} height={24} className="cart"/>
             </Link>
